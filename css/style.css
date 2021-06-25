@@ -1,0 +1,27 @@
+
+#back{
+    background-image: url(../assets/img/fondo.jpeg);
+}
+#cont{
+    background-color: white;
+}
+#number{
+    font-family: "Flexo-Bold",arial,sans-serif;
+}
+.selectButton :hover{
+    color: #4592c4;
+    background-color: white;
+    border-color: #4592c4;
+}
+.volador{
+    background: rgb(61,199,239);
+    background: linear-gradient(0deg, rgba(189,185,184,1) 50%, rgba(61,199,239,1) 50%);
+}
+.tierra{
+    background: rgb(248,223,64);
+    background: linear-gradient(0deg, rgba(171,152,66,1) 50%, rgba(248,223,64,1) 50%);
+}
+.description{
+    font-family: "Roboto",arial,sans-serif;
+}
+

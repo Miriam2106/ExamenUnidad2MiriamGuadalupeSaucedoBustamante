@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Examen Unidad II Miriam Guadalupe saucedo Bustamante</title>
+    <link rel="shortcut icon" href="./assets/img/icono.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+</head>
+
+<body ng-controller="index">
+    <h2 style="text-align: center;">Examen Unidad II Miriam Guadalupe saucedo Bustamante</h2>
+    <hr style="background-color: red; height: 2px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-fluid rounded" alt="PLAZA SOLAZ-PLAZA-TEMIXCO-MORELOS" src="./assets/img/icono.jpg"
+                width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contenido
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#peliculas">Películas</a>
+                        <a class="dropdown-item" href="#series">Series</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fav">Favoritos</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <form onsubmit="return false" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" placeholder="Buscar.." aria-label="search" id="search" required>
+                        <button onclick="alertSearch()" class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            <span data-feather="search">&nbsp;</span>Buscar
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="shadow p-3 mb-5 bg-white rounded" id="home">
+        <article>
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <video height="500" class="embed-responsive-item d-block w-100"
+                                    src="./assets/video/video1.mp4" controls="controls" autoplay="autoplay"
+                                    muted></video>
+                            </div>
+                            <div class="carousel-item">
+                                <video height="500" class="embed-responsive-item d-block w-100"
+                                    src="./assets/video/video2.mp4" controls="controls" autoplay="autoplay"
+                                    muted></video>
+                            </div>
+                            <div class="carousel-item">
+                                <video height="500" class="embed-responsive-item d-block w-100"
+                                    src="./assets/video/video3.mp4" controls="controls" autoplay="autoplay"
+                                    muted></video>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="peliculas">
+        <article>
+            <div class="card text-center">
+                <div class="card-header text-white" style="background-color: black;">
+                    Películas
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Terror y suspenso</h5>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli1.jpg">
+                            <h6 class="card-title">Un lugar en silencio</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli2.jpg">
+                            <h6 class="card-title">Host</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli3.jpg">
+                            <h6 class="card-title">Run</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli4.jpg">
+                            <h6 class="card-title">Silent Hill</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli5.jpg">
+                            <h6 class="card-title">Aterrados</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/peli6.jpg">
+                            <h6 class="card-title">Somnia</h6>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted" style="background-color: black;">
+                    Las más destacadas
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="series">
+        <article>
+            <div class="card text-center">
+                <div class="card-header text-white" style="background-color: black;">
+                    Series
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Suspenso</h5>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <!-- Button trigger modal -->
+                            <figure>
+                                <button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop">
+                                    <img style="height: 168px; width: 169px;" src="./assets/img/serie1.jpg">
+                                    <h6 class="card-title">La casa de papel</h6>
+                                    <br>
+                                </button>
+                            </figure>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                                tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">La casa de papel</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img style="height: 200px; margin-bottom: 10px;"
+                                                src="./assets/img/modal.jpg">
+                                            <br>
+                                            <span data-feather="star" class="text-warning"></span>
+                                            <span data-feather="star" class="text-warning"></span>
+                                            <span data-feather="star" class="text-warning"></span>
+                                            <span data-feather="star" class="text-warning"></span>
+                                            <span data-feather="star" class="text-warning"></span>
+                                            <br>
+                                            Una banda organizada de ladrones se propone cometer el atraco del siglo en
+                                            la Fábrica Nacional
+                                            de Moneda y Timbre. Cinco meses de preparación quedarán reducidos a once
+                                            días para poder llevar
+                                            a cabo con éxito el gran golpe.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/serie2.jpg">
+                            <h6 class="card-title">The walking dead</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/serie3.jpeg">
+                            <h6 class="card-title">Scream</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/serie4.jpg">
+                            <h6 class="card-title">Stranger things</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/serie5.jpg">
+                            <h6 class="card-title">Ghoul</h6>
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-2">
+                            <img style="height: 168px; width: 169px;" src="./assets/img/serie6.jpg">
+                            <h6 class="card-title">Un lugar en silencio</h6>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-muted" style="background-color: black;">
+                    Las más destacadas
+                </div>
+            </div>
+        </article>
+    </section>>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/miriam.s.bus"
+                    target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://twitter.com/BTS_twt?s=09"
+                    target="_blank" role="button" data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">Miriam Bustamante</a>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace()
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
+    </script>
+    <script src="./js/javaScript.js"></script>
+</body>
+
+</html>
